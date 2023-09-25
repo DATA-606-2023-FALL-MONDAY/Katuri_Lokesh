@@ -16,7 +16,7 @@ The primary objective of this project is to identify and assess the key factors 
 
 **Why It Matters:**
 
-Identifying influential factors for the Area Deprivation Index (ADI) is vital for targeted interventions, efficient resource allocation, healthcare planning, evidence-based policymaking, promoting social equity, and advancing research in addressing socio-economic disparities and health outcomes.
+Identifying influential factors for the Area Deprivation Index (ADI) is vital for targeted interventions, efficient resource allocation, healthcare planning, evidence-based policymaking, promoting social equity, and advancing research in addressing socioeconomic disparities and health outcomes.
 
 **Research Questions:**
 
