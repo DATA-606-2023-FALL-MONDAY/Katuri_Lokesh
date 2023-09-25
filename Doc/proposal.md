@@ -78,4 +78,4 @@ The ADI dataset, accessible via BigQuery for the years 2018-2020, is reported as
 
 **Target/Label for ML Model:** `area_deprivation_index_percent`
 
-**Potential Features/Predictors for ML Models:** Other indicators in the three tables
+**Potential Features/Predictors for ML Models:** Other indicators in the after analysis from three tables.
