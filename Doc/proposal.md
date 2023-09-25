@@ -4,7 +4,7 @@
 |-------------------------------------|------------------------------------------------------------------------------------|
 | **Prepared for**                     | UMBC Data Science master’s degree Capstone by Dr. Chaojie (Jay) Wang             |
 | **Author Name**                      | Lokesh Katuri                                                                      |
-| **Link to the author’s GitHub profile** | [Lokesh926 GitHub Profile](https://github.com/Lokesh926)                            |
+| **Link to the author’s GitHub profile** | (https://github.com/Lokesh926)                            |
 
 # Background
 
