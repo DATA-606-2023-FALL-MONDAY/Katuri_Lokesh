@@ -31,18 +31,10 @@ The ADI dataset, accessible via BigQuery for the years 2018-2020, is reported as
 **Data Sources:** [BigQuery Public Data: BroadStreet ADI](https://console.cloud.google.com/marketplace/product/broadstreet-public-data/adi?project=kubernates-296012)
 
 **Data Size:** 
-
-| **Table Name**                      | **Data Volume**           | **Storage Size**  |
-|-------------------------------------|---------------------------|--------------------|
-| area_deprivation_index_by_census_block_group | 653,217 rows x 10 columns | 79.29 MB           |
-| area_deprivation_index_by_county     | 9,426 rows x 8 columns   | 654.53 KB          |
-| area_deprivation_index_by_zipcode    | 98,967 rows x 5 columns  | 4.71 MB            |
-
-**Data Dictionary:** 
+Certainly, here are the data schemas for the three tables in Markdown (.md) format organized into tables:
 
 ### Table 1: `area_deprivation_index_by_census_block_group`
 
-```
 | Column Name                     | Data Type   | Nullable | Description                                       |
 |---------------------------------|-------------|----------|---------------------------------------------------|
 | geo_id                          | STRING      | YES      | Geographic ID or code                            |
@@ -55,11 +47,9 @@ The ADI dataset, accessible via BigQuery for the years 2018-2020, is reported as
 | state                           | STRING      | YES      | State identifier or abbreviation                  |
 | year                            | INTEGER     | YES      | Year of the data                                 |
 | area_deprivation_index_percent   | FLOAT       | YES      | Percentage-based area deprivation index          |
-```
 
 ### Table 2: `area_deprivation_index_by_county`
 
-```
 | Column Name                     | Data Type   | Nullable | Description                                       |
 |---------------------------------|-------------|----------|---------------------------------------------------|
 | geo_id                          | STRING      | YES      | Geographic ID or code                            |
@@ -70,11 +60,9 @@ The ADI dataset, accessible via BigQuery for the years 2018-2020, is reported as
 | state                           | STRING      | YES      | State identifier or abbreviation                  |
 | year                            | INTEGER     | YES      | Year of the data                                 |
 | area_deprivation_index_percent   | FLOAT       | YES      | Percentage-based area deprivation index          |
-```
 
 ### Table 3: `area_deprivation_index_by_zipcode`
 
-```
 | Column Name                     | Data Type   | Nullable | Description                                       |
 |---------------------------------|-------------|----------|---------------------------------------------------|
 | geo_id                          | STRING      | YES      | Geographic ID or code                            |
@@ -82,7 +70,6 @@ The ADI dataset, accessible via BigQuery for the years 2018-2020, is reported as
 | description                     | STRING      | YES      | Descriptive information                          |
 | year                            | INTEGER     | YES      | Year of the data                                 |
 | area_deprivation_index_percent   | FLOAT       | YES      | Percentage-based area deprivation index          |
-```
 
 **Target/Label for ML Model:** `area_deprivation_index_percent`
 
