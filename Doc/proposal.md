@@ -1,7 +1,7 @@
 # Project Title and Author
 
 - **Project Title:** "Uncovering Influential Factors and Predictive Modeling of Area Deprivation Index"
-- **Prepared for UMBC Data Science Master's Degree Capstone by Dr. Chaojie (Jay) Wang
+- **Prepared:** for UMBC Data Science Master's Degree Capstone by Dr. Chaojie (Jay) Wang
 - **Author Name:** Lokesh Katuri
 - **Author's GitHub Profile:** [Lokesh Katuri GitHub](https://github.com/Lokesh926)
 
