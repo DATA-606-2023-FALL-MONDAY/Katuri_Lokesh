@@ -26,15 +26,7 @@ Sensor Variability: What is the extent of variability among sensors of the same 
 
 Sensor Failure Prediction: Can we predict when and how sensors might fail, and what are the implications for system performance?
 
-Calibration Transfer: Is it possible to extend models developed for one sensor to other sensors in the array, and what are the limitations and benefits of doing so?
-
-Pattern Recognition: How can we efficiently recognize and classify different concentration transitions and predefined patterns within the dataset?
-
-Optimal Sampling Frequency: What is the optimal sampling frequency for sensor data acquisition to balance accuracy and resource usage?
-
-Real-world Applications: How can the findings and models derived from this dataset be applied to real-world scenarios, such as environmental monitoring or industrial process control?
-
-# Data
+**Data**
 
 There are two data files: "ethylene_CO.txt" and "ethylene_methane.txt," each containing recordings from sensors exposed to gas mixtures. Each file has 19 columns. The first column represents time (in seconds), the second column is Methane (or CO) concentration in ppm, the third column is Ethylene concentration in ppm, and the remaining 16 columns contain sensor readings. The sensor order is: TGS2602, TGS2602, TGS2600, TGS2600, TGS2610, TGS2610, TGS2620, TGS2620, TGS2602, TGS2602, TGS2600, TGS2600, TGS2610, TGS2610, TGS2620, TGS2620. Each file includes a header with column information.
 
