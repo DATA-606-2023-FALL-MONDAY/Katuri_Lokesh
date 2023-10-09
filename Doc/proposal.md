@@ -1,6 +1,6 @@
 # Title and Author
 
-| **Project Title**                    | Uncovering Influential Factors and Predictive Modeling of Area Deprivation Index |
+| **Project Title**                    | Gas sensor array under dynamic gas mixtures Index |
 |-------------------------------------|------------------------------------------------------------------------------------|
 | **Prepared for**                     | UMBC Data Science master’s degree Capstone by Dr. Chaojie (Jay) Wang             |
 | **Author Name**                      | Lokesh Katuri                                                                      |
