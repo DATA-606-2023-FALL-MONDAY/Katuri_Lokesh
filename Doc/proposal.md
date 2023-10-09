@@ -98,6 +98,6 @@ There are two data files: "ethylene_CO.txt" and "ethylene_methane.txt," each con
 | Sensor15            | Reading from Sensor 15.                          | Float     |
 | Sensor16            | Reading from Sensor 16.                          | Float     |
 
-**Target/Label for ML Model:** The Goal is to understand the anomalies in the sensor behavior. 
+**Target/Label for ML Model:** The goal is to understand the anomalies in the sensor behavior. 
 
 **Potential Features/Predictors for ML Models:** All the sensor data will be considered.
