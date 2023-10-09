@@ -2,8 +2,8 @@
 
 | **Project Title**                    | Gas sensor array under dynamic gas mixtures Index |
 |-------------------------------------|------------------------------------------------------------------------------------|
-| **Prepared for**                     | UMBC Data Science master’s degree Capstone by Dr. Chaojie (Jay) Wang             |
-| **Author Name**                      | Lokesh Katuri                                                                      |
+| **Prepared for**                     | UMBC Data Science master’s degree Capstone by Dr. Chaojie (Jay) Wang              |
+| **Author Name**                      | Lokesh Katuri                                                                     |
 | **Link to the author’s GitHub profile**| https://github.com/Lokesh926                   |
 
 # Background
