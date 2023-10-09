@@ -8,11 +8,11 @@
 
 # Background
 
-The Area Deprivation Index (ADI) is a well-established tool for identifying areas of deprivation and affluence within a community. Comprising 17 indicators drawn from the American Community Survey (ACS), the ADI has been extensively researched in peer-reviewed literature since 2003 and has been employed by the Health Resources and Services Administration (HRSA) for two decades. High levels of deprivation, as measured by the ADI, have been associated with adverse health outcomes, including increased 30-day hospital readmission rates, cardiovascular disease deaths, cervical cancer incidence, overall cancer mortality, and all-cause mortality. These 17 indicators within the ADI encompass various aspects of income, education, employment, and housing conditions, all assessed at the Census Block Group level.
+This dataset contains time series data from 16 chemical sensors exposed to gas mixtures with varying concentrations. It was collected at the ChemoSignals Laboratory at the University of California San Diego. The sensors operated at 5V and recorded data at 100 Hz. Concentration levels changed randomly, with various transitions, and predefined patterns were also included. The gases in the mixtures were Ethylene (0-20 ppm), CO (0-600 ppm), and Methane (0-300 ppm).
 
 **Project Objective:**
 
-The primary objective of this project is to identify and assess the key factors that have the most significant influence on the Area Deprivation Index (ADI).
+The primary objective of this project is to develop algorithms for continuous monitoring, study sensor variability, assess sensor failures, and explore calibration transfer possibilities.
 
 **Why It Matters:**
 
@@ -20,9 +20,19 @@ Identifying influential factors for the Area Deprivation Index (ADI) is vital fo
 
 **Research Questions:**
 
-1. Which specific socio-economic and demographic factors contribute most significantly to variations in the Area Deprivation Index (ADI)?
-2. How do these influential factors interact and affect the ADI at different geographic scales?
-3. Can predictive models be developed to forecast changes in ADI based on these key factors, enabling proactive policy and intervention planning?
+Algorithm Development: How can we develop more accurate algorithms for interpreting sensor data and detecting changes in gas concentrations over time?
+
+Sensor Variability: What is the extent of variability among sensors of the same type in the array, and how can this variability be accounted for in data analysis?
+
+Sensor Failure Prediction: Can we predict when and how sensors might fail, and what are the implications for system performance?
+
+Calibration Transfer: Is it possible to extend models developed for one sensor to other sensors in the array, and what are the limitations and benefits of doing so?
+
+Pattern Recognition: How can we efficiently recognize and classify different concentration transitions and predefined patterns within the dataset?
+
+Optimal Sampling Frequency: What is the optimal sampling frequency for sensor data acquisition to balance accuracy and resource usage?
+
+Real-world Applications: How can the findings and models derived from this dataset be applied to real-world scenarios, such as environmental monitoring or industrial process control?
 
 # Data
 
