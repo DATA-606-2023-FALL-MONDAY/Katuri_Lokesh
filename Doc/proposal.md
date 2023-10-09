@@ -4,7 +4,7 @@
 |-------------------------------------|------------------------------------------------------------------------------------|
 | **Prepared for**                     | UMBC Data Science master’s degree Capstone by Dr. Chaojie (Jay) Wang             |
 | **Author Name**                      | Lokesh Katuri                                                                      |
-| **Link to the author’s GitHub profile** | https://github.com/Lokesh926                           |
+| **Link to the author’s GitHub profile**| https://github.com/Lokesh926                   |
 
 # Background
 
@@ -36,56 +36,68 @@ Real-world Applications: How can the findings and models derived from this datas
 
 # Data
 
-The ADI dataset, accessible via BigQuery for the years 2018-2020, is reported as percentiles ranging from 0% to 100%, with 50% representing the midpoint of socioeconomic status nationally. This dataset offers insights at the county, ZIP code, and Census Block Group levels, making it a versatile tool for examining socio-economic disparities. It highlights neighborhood and racial inequalities, with higher ADI percentiles indicating greater deprivation and lower ones indicating affluence. The dataset provides raw ADI scores and additional statistics, and it offers data visualization options through the ADI story on BroadStreet, accessible with a free account. This resource is invaluable for understanding and addressing disparities within communities.
+There are two data files: "ethylene_CO.txt" and "ethylene_methane.txt," each containing recordings from sensors exposed to gas mixtures. Each file has 19 columns. The first column represents time (in seconds), the second column is Methane (or CO) concentration in ppm, the third column is Ethylene concentration in ppm, and the remaining 16 columns contain sensor readings. The sensor order is: TGS2602, TGS2602, TGS2600, TGS2600, TGS2610, TGS2610, TGS2620, TGS2620, TGS2602, TGS2602, TGS2600, TGS2600, TGS2610, TGS2610, TGS2620, TGS2620. Each file includes a header with column information.
 
-**Data Sources:** [BigQuery Public Data: BroadStreet ADI](https://console.cloud.google.com/marketplace/product/broadstreet-public-data/adi?project=kubernates-296012)
+**Data Sources:** [Gas sensor array under dynamic gas mixtures]
+(https://archive.ics.uci.edu/dataset/322/gas+sensor+array+under+dynamic+gas+mixtures)
 
 **Data Size:** 
 | **Table Name**                      | **Data Volume**           | **Storage Size**  |
 |-------------------------------------|---------------------------|--------------------|
-| area_deprivation_index_by_census_block_group | 653,217 rows x 10 columns | 79.29 MB           |
-| area_deprivation_index_by_county     | 9,426 rows x 8 columns   | 654.53 KB          |
-| area_deprivation_index_by_zipcode    | 98,967 rows x 5 columns  | 4.71 MB            |
+|  ethylene_CO.txt                    | 4,208,261 rows x 19 column| 613.16 MB           |
+| ethylene_methane.txt                | 4,178,504 rows x 19 columns| 608.74 MB          |
 
 
-### Table 1: `area_deprivation_index_by_census_block_group`
 
-| Column Name                     | Data Type   | Nullable | Description                                       |
-|---------------------------------|-------------|----------|---------------------------------------------------|
-| geo_id                          | STRING      | YES      | Geographic ID or code                            |
-| state_fips_code                 | STRING      | YES      | FIPS code for U.S. states                        |
-| county_fips_code                | STRING      | YES      | FIPS code for counties within states             |
-| block_group_fips_code           | STRING      | YES      | FIPS code for block groups                      |
-| description                     | STRING      | YES      | Descriptive information                          |
-| county_name                     | STRING      | YES      | Name of the county                               |
-| state_name                      | STRING      | YES      | Name of the state                                |
-| state                           | STRING      | YES      | State identifier or abbreviation                  |
-| year                            | INTEGER     | YES      | Year of the data                                 |
-| area_deprivation_index_percent   | FLOAT       | YES      | Percentage-based area deprivation index          |
+### Table 1: `ethylene_CO.txt`
 
-### Table 2: `area_deprivation_index_by_county`
+| Column Name         | Description                                      | Data Type |
+|---------------------|--------------------------------------------------|-----------|
+| Time (seconds)     | Time in seconds at which the data was recorded.   | Float     |
+| CO2 conc (ppm)      | Concentration of CO2 in parts per million (ppm). | Float     |
+| Ethylene conc (ppm)| Concentration of Ethylene in parts per million (ppm).| Float  |
+| Sensor1             | Reading from Sensor 1.                           | Float     |
+| Sensor2             | Reading from Sensor 2.                           | Float     |
+| Sensor3             | Reading from Sensor 3.                           | Float     |
+| Sensor4             | Reading from Sensor 4.                           | Float     |
+| Sensor5             | Reading from Sensor 5.                           | Float     |
+| Sensor6             | Reading from Sensor 6.                           | Float     |
+| Sensor7             | Reading from Sensor 7.                           | Float     |
+| Sensor8             | Reading from Sensor 8.                           | Float     |
+| Sensor9             | Reading from Sensor 9.                           | Float     |
+| Sensor10            | Reading from Sensor 10.                          | Float     |
+| Sensor11            | Reading from Sensor 11.                          | Float     |
+| Sensor12            | Reading from Sensor 12.                          | Float     |
+| Sensor13            | Reading from Sensor 13.                          | Float     |
+| Sensor14            | Reading from Sensor 14.                          | Float     |
+| Sensor15            | Reading from Sensor 15.                          | Float     |
+| Sensor16            | Reading from Sensor 16.                          | Float     |
 
-| Column Name                     | Data Type   | Nullable | Description                                       |
-|---------------------------------|-------------|----------|---------------------------------------------------|
-| geo_id                          | STRING      | YES      | Geographic ID or code                            |
-| state_fips_code                 | STRING      | YES      | FIPS code for U.S. states                        |
-| county_fips_code                | STRING      | YES      | FIPS code for counties within states             |
-| county_name                     | STRING      | YES      | Name of the county                               |
-| state_name                      | STRING      | YES      | Name of the state                                |
-| state                           | STRING      | YES      | State identifier or abbreviation                  |
-| year                            | INTEGER     | YES      | Year of the data                                 |
-| area_deprivation_index_percent   | FLOAT       | YES      | Percentage-based area deprivation index          |
 
-### Table 3: `area_deprivation_index_by_zipcode`
+### Table 2: `ethylene_methane.txt`
 
-| Column Name                     | Data Type   | Nullable | Description                                       |
-|---------------------------------|-------------|----------|---------------------------------------------------|
-| geo_id                          | STRING      | YES      | Geographic ID or code                            |
-| zipcode                         | STRING      | YES      | ZIP code                                         |
-| description                     | STRING      | YES      | Descriptive information                          |
-| year                            | INTEGER     | YES      | Year of the data                                 |
-| area_deprivation_index_percent   | FLOAT       | YES      | Percentage-based area deprivation index          |
+| Column Name         | Description                                      | Data Type |
+|---------------------|--------------------------------------------------|-----------|
+| Time (seconds)     | Time in seconds at which the data was recorded.   | Float     |
+| CO2 conc (ppm)      | Concentration of CO2 in parts per million (ppm). | Float     |
+| Ethylene conc (ppm)| Concentration of Ethylene in parts per million (ppm).| Float  |
+| Sensor1             | Reading from Sensor 1.                           | Float     |
+| Sensor2             | Reading from Sensor 2.                           | Float     |
+| Sensor3             | Reading from Sensor 3.                           | Float     |
+| Sensor4             | Reading from Sensor 4.                           | Float     |
+| Sensor5             | Reading from Sensor 5.                           | Float     |
+| Sensor6             | Reading from Sensor 6.                           | Float     |
+| Sensor7             | Reading from Sensor 7.                           | Float     |
+| Sensor8             | Reading from Sensor 8.                           | Float     |
+| Sensor9             | Reading from Sensor 9.                           | Float     |
+| Sensor10            | Reading from Sensor 10.                          | Float     |
+| Sensor11            | Reading from Sensor 11.                          | Float     |
+| Sensor12            | Reading from Sensor 12.                          | Float     |
+| Sensor13            | Reading from Sensor 13.                          | Float     |
+| Sensor14            | Reading from Sensor 14.                          | Float     |
+| Sensor15            | Reading from Sensor 15.                          | Float     |
+| Sensor16            | Reading from Sensor 16.                          | Float     |
 
-**Target/Label for ML Model:** `area_deprivation_index_percent`
+**Target/Label for ML Model:** The Goal is to understand the anomalies in the sensor behavior. 
 
-**Potential Features/Predictors for ML Models:** Other indicators in the after analysis from three tables.
+**Potential Features/Predictors for ML Models:** All the sensor data will be considered.
