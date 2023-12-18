@@ -1,24 +1,24 @@
 # Anomaly Detection in Dynamic Gas Sensor Arrays
 
 **Data Source:** [Gas Sensor Array Dataset](https://archive.ics.uci.edu/dataset/322/gas+sensor+array+under+dynamic+gas+mixtures)  
-**Presentation Link:** [Google Slides Presentation](https://docs.google.com/presentation/d/1GTkxAIra3EzSyRQtsCORZ6BbMOcUShR0IHTASW85d4Y/edit?usp=sharing)
-**Youtube Link:**[https://youtu.be/kFzSxB1yul0]
+**Presentation Link:** [Google Slides Presentation](https://docs.google.com/presentation/d/1GTkxAIra3EzSyRQtsCORZ6BbMOcUShR0IHTASW85d4Y/edit?usp=sharing)  
+**Youtube Link:** [https://youtu.be/kFzSxB1yul0]
 
 ## Abstract
 
-This project dives into a time series dataset featuring 16 chemical sensors exposed to varying concentrations of Ethylene, CO, and Methane gases. Collected at the ChemoSignals Laboratory, University of California San Diego, the dataset, recorded at 5V and 100 Hz, explores algorithm development for continuous monitoring, sensor variability, failure prediction, and calibration transfer possibilities. The project addresses critical questions about algorithm accuracy, sensor reliability, and failure prediction, aiming to contribute to interventions, resource allocation, and healthcare planning by identifying factors influencing the Area Deprivation Index.
+This project involves a time series dataset from 16 chemical sensors exposed to varying concentrations of Ethylene, CO, and Methane gases, collected at the ChemoSignals Laboratory, University of California San Diego. Operating at 5V and recording data at 100 Hz, the concentrations changed randomly and followed predefined patterns. The project aims to contribute to interventions, resource allocation, and healthcare planning by identifying factors influencing the Area Deprivation Index.
 
 ## Introduction
 
-This dataset, from the UCSD ChemoSignals Laboratory, holds significance in advancing sensor technology for environmental monitoring and safety systems. Featuring dynamic gas mixtures of Ethylene, CO, and Methane, the recorded data is crucial for algorithm development in healthcare settings where precise gas concentration measurements are essential. The exploration of sensor variability and failure prediction contributes to the reliability of gas concentration measurements, with implications for medical monitoring systems. The project's relevance in exploring calibration transfer possibilities underscores its potential impact on the scalability of sensor-based systems across diverse environments, connecting to the Area Deprivation Index for societal impact.
+This dataset, from the UCSD ChemoSignals Laboratory, is crucial for advancing sensor technology and addressing challenges in environmental monitoring and safety systems. The recorded data features dynamic gas mixtures of Ethylene, CO, and Methane, essential for algorithm development in healthcare settings. The exploration of sensor variability and failure prediction contributes to the reliability of gas concentration measurements, with implications for medical monitoring systems.
 
 ## About the Dataset
 
-Collected over approximately 12 hours, the dataset captures sensor readings from a 16-sensor array at a rate of 100 Hz while operating at 5V. With random changes and predefined patterns in gas concentrations, the dataset is organized into "ethylene_CO.txt" and "ethylene_methane.txt," each containing 19 columns. Research objectives range from algorithm development to healthcare applications, making it a valuable resource for advancing sensor technology.
+Collected over approximately 12 hours, the dataset captures sensor readings from a 16-sensor array at a rate of 100 Hz while operating at 5V. The dataset is organized into "ethylene_CO.txt" and "ethylene_methane.txt," each containing 19 columns. Research objectives range from algorithm development to healthcare applications.
 
 ## Importance of the Project
 
-This project's significance lies in its potential to revolutionize sensor technology and address critical challenges in environmental monitoring, healthcare, and social equity. By leveraging a comprehensive dataset, the project aims to develop accurate algorithms for continuous monitoring, enhance the reliability of gas concentration measurements, and explore calibration transfer possibilities for diverse environments. Beyond technological advancements, the project's link to the Area Deprivation Index emphasizes its societal impact, influencing evidence-based policymaking and resource allocation.
+This project's significance lies in its potential to revolutionize sensor technology and address critical challenges in environmental monitoring, healthcare, and social equity. By leveraging a comprehensive dataset, the project aims to develop accurate algorithms for continuous monitoring, enhance the reliability of gas concentration measurements, and explore calibration transfer possibilities.
 
 ## Type of Issue
 
@@ -66,7 +66,7 @@ Identifying anomalies in the 16 sensors with time.
 
 ## Conclusion
 
-Leveraging GridSearchCV to refine hyperparameters in the Isolation Forest model has significantly improved anomaly detection precision in the 16-sensor array exposed to dynamic gas mixtures. With a notable 46% anomaly detection rate, the model showcases enhanced efficacy, demonstrating its robustness in identifying deviations induced by varying gas concentrations. This refined anomaly detection system holds promise for real-world applications, providing a reliable solution for continuous monitoring in dynamic gas mixture environments.
+Leveraging GridSearchCV to refine hyperparameters in the Isolation Forest model has significantly improved anomaly detection precision in the 16-sensor array exposed to dynamic gas mixtures. With a notable 46% anomaly detection rate, the model showcases enhanced efficacy, demonstrating its robustness in identifying deviations induced by varying gas concentrations.
 
 ## Future Work
 
@@ -78,4 +78,3 @@ Future work should focus on advancing anomaly detection within the 16-sensor arr
 - Smith, A., et al. (2022). "Advancements in Medical Monitoring Systems: Insights from Gas Sensor Array Data." Journal of Healthcare Technology, 15(2), 123-136.
 - Johnson, L., et al. (2021). "Calibration Transfer in Sensor Networks: A Comprehensive Review." Sensors, 21(8), 2874.
 - [CDC - Area Deprivation Index](https://www.cdc.gov/socialdeterminants/adi/index.htm)
-
