@@ -1,8 +1,8 @@
 # Anomaly Detection in Dynamic Gas Sensor Arrays
 
-**Data Source:** [Gas Sensor Array Dataset](https://archive.ics.uci.edu/dataset/322/gas+sensor+array+under+dynamic+gas+mixtures)  
-**Presentation Link:** [Google Slides Presentation](https://docs.google.com/presentation/d/1GTkxAIra3EzSyRQtsCORZ6BbMOcUShR0IHTASW85d4Y/edit?usp=sharing)  
-**Youtube Link:** [https://youtu.be/kFzSxB1yul0]
+📊 **Data Source:** [Gas Sensor Array Dataset](https://archive.ics.uci.edu/dataset/322/gas+sensor+array+under+dynamic+gas+mixtures)  
+📑 **Presentation Link:** [Google Slides Presentation](https://docs.google.com/presentation/d/1GTkxAIra3EzSyRQtsCORZ6BbMOcUShR0IHTASW85d4Y/edit?usp=sharing)  
+🎥 **Youtube Link:** [https://youtu.be/kFzSxB1yul0]
 
 ## Abstract
 
@@ -26,6 +26,8 @@ The project addresses the critical challenge of predicting and mitigating sensor
 
 ## Feature in the Dataset
 
+📊 **Feature Table:**
+
 | Column Name       | Description                                       | Data Type |
 | ------------------ | ------------------------------------------------- | --------- |
 | Time (seconds)     | Time in seconds at which the data was recorded.    | Float     |
@@ -35,33 +37,34 @@ The project addresses the critical challenge of predicting and mitigating sensor
 
 ## Target Variable
 
-Identifying anomalies in the 16 sensors with time.
+🎯 **Target Variable:**
+- Identifying anomalies in the 16 sensors with time.
 
 ## Technique and ML Model
 
 ### Exploratory Data Analysis:
 
-- **Descriptive Statistics:**
+🔍 **Descriptive Statistics:**
   - Basic statistics (mean, median, standard deviation) for each sensor reading.
   - Summary statistics for gas concentration levels.
 
-- **Time Series Plots:**
+📈 **Time Series Plots:**
   - Time series plots for each sensor's readings to observe trends and irregularities.
 
-- **Correlation Analysis:**
+🔄 **Correlation Analysis:**
   - Identify relationships between different sensors.
   - Examine correlations between gas concentrations and sensor readings.
 
-- **Data Preprocessing:**
+🛠️ **Data Preprocessing:**
   - StandardScaler: Effective for datasets with numerical features of varying scales.
 
 ### Data Modelling
 
-- **Isolation Forest:**
+🤖 **Isolation Forest:**
   - Unsupervised learning algorithm for anomaly detection.
   - Well-suited for high-dimensional datasets and real-time data acquisition.
 
-- **Hyperparameter Tuning:**
+⚙️ **Hyperparameter Tuning:**
   - GridSearchCV explores hyperparameters to optimize the Isolation Forest model for precision.
 
 ## Conclusion
