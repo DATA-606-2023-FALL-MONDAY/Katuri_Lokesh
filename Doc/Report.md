@@ -2,6 +2,7 @@
 
 **Data Source:** [Gas Sensor Array Dataset](https://archive.ics.uci.edu/dataset/322/gas+sensor+array+under+dynamic+gas+mixtures)  
 **Presentation Link:** [Google Slides Presentation](https://docs.google.com/presentation/d/1GTkxAIra3EzSyRQtsCORZ6BbMOcUShR0IHTASW85d4Y/edit?usp=sharing)
+**Youtube Link:**
 
 ## Abstract
 
